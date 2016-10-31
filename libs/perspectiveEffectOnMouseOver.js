@@ -7,20 +7,20 @@
 		return this.each(function() {
 			$(this).mouseover(function(event){
 				$(this).relativeMousePosition(event, "center", function(x, y, element){
-					x /= 500;
-					y /= 500;
-					$(element).transition({perspective: "30px", rotateY: x * -1 + "deg", rotateX: y + "deg"}, 100, "ease");
+					x /= 10;
+					y /= 10;
+					$(element).transition({perspective: "500px", rotateY: x * -1 + "deg", rotateX: y + "deg"}, 100, "ease");
 				})
 			})
 			.mousemove(function(event){
 				$(this).relativeMousePosition(event, "center", function(x, y, element){
-					x /= 500;
-					y /= 500;
-					$(element).transition({perspective: "30px", rotateY: x * -1 + "deg", rotateX: y + "deg"}, 0);
+					x /= 10;
+					y /= 10;
+					$(element).transition({perspective: "500px", rotateY: x * -1 + "deg", rotateX: y + "deg"}, 0);
 				})
 			})
 			.mouseout(function(event){
-				$(this).transition({perspective: "30px", rotateY: "0deg", rotateX: "0deg"}, 400, "ease");
+				$(this).transition({perspective: "500px", rotateY: "0deg", rotateX: "0deg"}, 400, "ease");
 			});
 		});
 	};
