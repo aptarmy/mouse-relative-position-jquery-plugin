@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transit</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../dist/relativeMousePosition.js"></script>
+	<script type="text/javascript" src="../libs/perspectiveEffectOnMouseOver.js"></script>
+	<script type="text/javascript" src="../libs/jquery.transit.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".perspective-container").find("img").perspectiveEffectOnMouseOver();
+		});
+	</script>
+</head>
+<body>
+	<div class="perspective-container" style="float: left;">
+		<img src="demo-1.jpg">
+		<img src="demo-2.jpg">
+		<img src="demo-3.jpg">
+	</div>
+</body>
+</html>
